@@ -1,1 +1,10 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  padding: 48px 135px 0 135px;
+}/*# sourceMappingURL=style.css.map */
