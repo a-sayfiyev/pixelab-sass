@@ -4,8 +4,165 @@
   box-sizing: border-box;
 }
 
+$buttonBgColor: #FF6600;
+$mainTextColor: #000;
+$secondaryTextColor: #0B1B35;
+$lastTextColor: #151439; /* 40% */
+$lineHeight: 28.5px;
 
 body {
 height: 100vh;
   padding: 48px 135px 0 135px;
+  background-color: #fff;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  position: relative;
+  align-items: center;
+
+  img {
+    margin-right: 110px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    right: 0;
+    color: $mainTextColor;
+
+    ul {
+      display: flex;
+      list-style: none;
+      align-items: center;
+      gap: 40px;
+      margin-right: 250px;
+
+      li {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: $lineHeight;
+        cursor: pointer;
+      }
+
+      .bolder {
+        font-weight: 700;
+      }
+    }
+
+    .reg {
+      display: flex;
+      gap: 22px;
+      align-items: center;
+
+      p {
+        font-size: 18px;
+          font-weight: 500;
+          line-height: $lineHeight;
+          cursor: pointer;
+      }
+    }
+  }
+}
+
+.main-button {
+  color: #fff;
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: $buttonBgColor;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+main {
+  .main-info {
+    margin-top: 114px;
+
+    h1 {
+      width: 653px;
+      height: 260px;
+      color: $secondaryTextColor  ;
+        font-size: 70px;
+        font-weight: 850;
+        line-height: 81px;
+    }
+
+    .goal {
+      width: 555px;
+      color: $mainTextColor;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: $lineHeight;
+        margin-top: 16px;
+    }
+
+    .main-button {
+      margin-top: 66px;
+      padding: 11px 34px;
+    }
+  }
+
+  .main-img {
+    position: absolute;
+    z-index: 10;
+    top: 97px;
+    right: 0;
+  }
+
+  .courses-section {
+    margin-top: 207px;
+
+    h1 {
+      color: $secondaryTextColor;
+      text-align: center;
+        font-size: 52px;
+        font-weight: 700;
+        line-height: $lineHeight;
+    }
+
+    .courses-wrapper {
+      margin-top: 108px;
+      display: flex;
+      gap: 57px;
+
+
+      .course-container {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 41px 45px;
+
+        border-radius: 28px;
+        box-shadow: 0px 2.76726px 2.21381px 0px rgba(0, 0, 0, 0.02), 0px 6.6501px 5.32008px 0px rgba(0, 0, 0, 0.03), 0px 12.52155px 10.01724px 0px rgba(0, 0, 0, 0.04), 0px 22.33631px 17.86905px 0px rgba(0, 0, 0, 0.04), 0px 41.77761px 33.42209px 0px rgba(0, 0, 0, 0.05), 0px 100px 80px 0px rgba(0, 0, 0, 0.07);
+
+      h1 {
+        text-align: center;
+          font-size: 36px;
+          font-weight: 700;
+          line-height: $lineHeight;
+          margin-top: 41px;
+      }
+
+      p {
+        width: 270px;
+        margin-top: 32px;
+        text-align: center;
+        font-size: 18px;
+          font-weight: 400;
+          line-height: $lineHeight;
+      }
+
+      .main-button {
+        margin-top: 18px;
+        padding: 11px 36px;
+      }
+
+      }
+    }
+  }
+
+
 }
